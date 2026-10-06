@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.hostilo/hostilo",
+  "title": "Hostilo",
+  "description": "Publish and update websites from your AI chat. Hosting for AI-generated HTML, live in seconds.",
+  "version": "1.0.3",
+  "websiteUrl": "https://hostilo.app/agents?utm_source=mcp_registry&utm_medium=listing#mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hostilo.app/mcp"
+    }
+  ]
+}
