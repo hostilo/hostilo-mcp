@@ -1,0 +1,11 @@
+{
+  "name": "hostilo",
+  "version": "1.6.0",
+  "description": "Publish websites from Gemini: single pages, multi-file sites, ZIP projects or templates, live at name.hostilo.app in seconds.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "hostilo": {
+      "httpUrl": "https://hostilo.app/mcp"
+    }
+  }
+}

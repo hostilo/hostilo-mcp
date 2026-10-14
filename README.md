@@ -1,6 +1,6 @@
 # Hostilo MCP server
 
-Publish and update websites from your AI chat. [Hostilo](https://hostilo.app/?utm_source=github&utm_medium=readme) is hosting for AI-generated websites: ask Claude, ChatGPT, Cursor or any MCP client to create a site, publish a single page or a whole multi-file project, start from a ready-made template, check visitor stats or roll back a change. It goes live at `https://<name>.hostilo.app` in seconds.
+Publish and update websites from your AI chat. [Hostilo](https://hostilo.app/?utm_source=github&utm_medium=readme) is hosting for AI-generated websites: ask Claude, ChatGPT, Gemini, Cursor or any MCP client to create a site, publish a single page or a whole multi-file project, start from a ready-made template, check visitor stats or roll back a change. It goes live at `https://<name>.hostilo.app` in seconds.
 
 This is a **remote MCP server**. There is nothing to install or run: connect your client to the URL below and sign in to Hostilo.
 
@@ -20,11 +20,23 @@ https://hostilo.app/mcp
 
 **ChatGPT, Perplexity and other apps:** look for custom connectors or MCP servers in the app's settings and add the same URL. Which plans can add custom connectors is up to each app.
 
+**Gemini CLI** (extension with the server and usage notes for Gemini):
+
+```bash
+gemini extensions install https://github.com/hostilo/hostilo-mcp
+```
+
+Then run `/mcp auth hostilo` in Gemini CLI and sign in to Hostilo in the browser. Without the extension: `gemini mcp add --transport http hostilo https://hostilo.app/mcp`.
+
+**Gemini on the web:** where Google offers custom apps for your account, open Gemini settings, Connected apps, add a custom app and paste the same URL.
+
 **Claude Code:**
 
 ```bash
 claude mcp add --transport http hostilo https://hostilo.app/mcp
 ```
+
+**One-click install for Cursor and VS Code:** buttons at https://hostilo.app/agents#install
 
 **Cursor, Windsurf, VS Code and other clients (`mcp.json`):**
 
